@@ -1,0 +1,8 @@
+{
+    "servers": {
+        "itb-mcp": {
+            "type": "http",
+            "url": "https://www.itb.ec.europa.eu/mcp"
+        }
+    }
+}
