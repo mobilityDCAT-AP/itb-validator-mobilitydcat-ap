@@ -27,7 +27,7 @@ This project provides a standalone SHACL validator for the mobilityDCAT-AP speci
 Navigate to the project root and run:
 
 ```bash
-docker pull ghcr.io/mobilitydcat-ap/itb-validator-mobilitydcat-ap:latest
+docker pull ghcr.io/mobilitydcat-ap/itb-validator-mobilitydcat-ap:1.0
 ```
 
 Alternatively, you can build the image locally:
@@ -43,7 +43,7 @@ docker build -t ghcr.io/mobilitydcat-ap/itb-validator-mobilitydcat-ap:latest .
 docker run -d \
   --name mobilitydcat-validator \
   -p 8080:8080 \
-  ghcr.io/mobilityDCAT-AP/itb-validator-mobilitydcat-ap:1.0
+  ghcr.io/mobilitydcat-ap/itb-validator-mobilitydcat-ap:1.0
 ```
 
 ## Usage
