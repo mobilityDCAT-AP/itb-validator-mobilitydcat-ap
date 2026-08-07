@@ -6,9 +6,15 @@ This repo provides a configuration of the ITB SHACL Validator according to the g
 
 ## Overview
 
-This project provides a standalone SHACL validator for the mobilityDCAT-AP specification, allowing validation of RDF metadata against predefined SHACL shapes for different versions (v1.1.0, v3.0.0) and validation profiles.
+This project provides a standalone SHACL validator for the mobilityDCAT-AP specification, allowing validation of RDF metadata against predefined SHACL shapes for different versions (v1.0.0, v1.0.1, v1.1.0, v3.0.0) and validation profiles.
 
 ### Supported Versions and Profiles
+
+- **mobilityDCAT-AP v1.0.0**
+  - Default validation profile
+
+- **mobilityDCAT-AP v1.0.1**
+  - Default validation profile
 
 - **mobilityDCAT-AP v1.1.0**
   - `core`: Core Constraints
@@ -69,8 +75,8 @@ The script auto-detects whether the input is a file or a directory and runs in s
 | Argument | Required | Default | Description |
 |---|---|---|---|
 | `file\|directory` | yes | — | RDF file or directory of RDF files |
-| `validation-type` | yes | — | Version: `v1.1.0`, `v3.0.0` |
-| `profile` | no | `core` | `core`, `range`, `full`, `cv` |
+| `validation-type` | yes | — | Version: `v1.0.0`, `v1.0.1`, `v1.1.0`, `v3.0.0` |
+| `profile` | no | `core` | `core`, `range`, `full`, `cv` (only for v1.1.0 and v3.0.0) |
 | `output-format` | no | `application/json` | `application/json`, `application/rdf+xml`, `text/turtle`, `application/xml` |
 | `validator-url` | no | `http://localhost:8080` | Validator base URL |
 | `output-directory` | no | `./validation-reports` | Directory for report files |
@@ -81,10 +87,10 @@ The script auto-detects whether the input is a file or a directory and runs in s
 
 ```bash
 # Single file — core profile, JSON report
-./validate-metadata.sh metadata.ttl v1.1.0
+./validate-metadata.sh metadata.ttl v1.0.0
 
 # Single file — range profile, RDF/XML report
-./validate-metadata.sh metadata.ttl v1.1.0 range application/rdf+xml
+./validate-metadata.sh metadata.ttl v1.0.1 range application/rdf+xml
 
 # Batch — all files with range profile
 ./validate-metadata.sh ./metadata v1.1.0 range application/json
