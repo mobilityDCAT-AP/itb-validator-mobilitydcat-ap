@@ -41,7 +41,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Global variables
-DOMAIN="mobilityDCAT-AP"
+DOMAIN="mobilitydcat-ap"
 TEMP_DIR=$(mktemp -d)
 BATCH_MODE=false
 PROFILE="core"

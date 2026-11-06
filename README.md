@@ -56,7 +56,7 @@ docker run -d \
 
 ### Web Interface
 
-Navigate to `http://localhost:8080/shacl/mobilityDCAT-AP/upload` to validate RDF metadata via the web interface.
+Navigate to `http://localhost:8080/shacl/mobilitydcat-ap/upload` to validate RDF metadata via the web interface.
 
 ### REST API
 
