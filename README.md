@@ -121,7 +121,7 @@ In batch mode, all files are validated against the same validation type(s). The 
 
 ## License
 
-Please refer to the mobilityDCAT-AP specification license and ITB software license.
+The configuration in this repository is licensed as EUPL 1.2 following the [ITB SHACL validator license](https://github.com/ISAITB/shacl-validator/blob/master/LICENCE.txt). The referred SHACL shapes follow the CC-BY 4.0 [mobilityDCAT-AP specification license](https://github.com/mobilityDCAT-AP/mobilityDCAT-AP/blob/main/LICENCE.md).
 
 ## Support
 
