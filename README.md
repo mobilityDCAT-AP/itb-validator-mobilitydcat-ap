@@ -35,7 +35,7 @@ This project provides a standalone SHACL validator for the mobilityDCAT-AP speci
 
 The v3.0.0 `*_import` profiles also load background knowledge together with the shapes: the ontologies of the reused vocabularies (`imports.ttl`) for `core_import`, `range_import` and `full_import`, and the EU authority tables and mobilityDCAT-AP controlled vocabularies (`mdr-imports.ttl`) for `full_import` and `cv_import`. The profiles without `_import` evaluate the input data only, so controlled-vocabulary checks (e.g., `skos:inScheme`) pass only if the input includes the vocabulary triples. The `deprecated` profile reports (as warnings) the use of properties deprecated in mobilityDCAT-AP v3.0.0.
 
-The validation types exposed by the validator are `v1.0.0`, `v1.0.1` and `<version>.<profile>` (e.g., `v3.0.0.cv_import`), as defined in [config.properties](resources/mobilityDCAT-AP/config.properties).
+The validation types exposed by the validator are `v1.0.0`, `v1.0.1` and `<version>.<profile>` (e.g., `v3.0.0.cv_import`), as defined in [config.properties](resources/mobilitydcat-ap/config.properties).
 
 ## Quick Start with Docker
 
